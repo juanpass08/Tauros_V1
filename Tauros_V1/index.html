@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent v1.0</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+    <div class="app-container">
+        <main class="chat-section">
+            <header class="chat-header">
+                <h2>Agent Chat</h2>
+            </header>
+
+            <div class="chat-history" id="chatHistory">
+                <div class="message ai-message">Hello, I am your Tauros Agent, how can I help you?</div>
+            </div>
+
+            <div class="input-area">
+                <input type="text" placeholder="Type your message here..." id="userInput">
+                <button id="sendBtn">Send</button>
+            </div>
+        </main>
+
+        <aside class="info-panel">
+            <header class="info-header">
+                <h2>Agent Info</h2>
+            </header>
+            <div class="info-content">
+                <div class="card">
+                    <h3>API Status</h3>
+                    <p id="apiStatus">Wating interaction...</p>
+                </div>
+                <div class="card">
+                    <h3>Extracted Data (JSON)</h3>
+                    <pre id="jsonData">{ "status": "idle" }</pre>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
