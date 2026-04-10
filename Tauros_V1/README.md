@@ -1,4 +1,4 @@
-# Markdown syntax guide
+# Tauros_V1
 
 This is just a brief summary of how to run the agent. (And some hints...)
 
